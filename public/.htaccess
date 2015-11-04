@@ -3,6 +3,7 @@
         Options -MultiViews
     </IfModule>
 
+
     RewriteEngine On
 
     RewriteCond %{HTTP:Authorization} ^(.*)
@@ -17,3 +18,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+Header always set Access-Control-Allow-Headers "X-Accept-Charset,X-Accept,Content-Type,Authorization"

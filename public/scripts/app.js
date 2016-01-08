@@ -24,6 +24,13 @@
                     url: '/users',
                     templateUrl: '../views/userView.html',
                     controller: 'UserController as user'
-                });
+                })
+                .state('index', {
+                    url: '/index',
+                    templateUrl: '../views/documento/index.html',
+                    controller: 'DocumentoController'
+                })
+                //.when('/index', { controller: 'DocumentoController', templateUrl: 'views/documento/index.html'})
+                ;
         });
 })();

@@ -9,7 +9,7 @@
         .when('/tela', { controller: 'TelaController', templateUrl: 'views/tela/index.html'})
         .when('/tela/:id', { controller: 'TelaController', templateUrl: 'views/tela/index.html'})
         .when('/campo/:id', { controller: 'CampoController', templateUrl: 'views/campo/index.html'})
-        .when('/projeto', { controller: 'ProjetoController', templateUrl: 'views/projeto/index.html'})
+        //.when('/projeto', { controller: 'ProjetoController', templateUrl: 'views/projeto/index.html'})
         .when('/documento/:id', { controller: 'DocumentoController', templateUrl: 'views/documento/index.html'})
         .otherwise({redirectTo: '/'});
     }]);

@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('documento', [
     'as' => 'documento.index', 'uses' => 'DocumentoController@index'
 ]);
+
 Route::get('documento/all', [
     'as' => 'documento.all', 'uses' => 'DocumentoController@all'
 ]);
